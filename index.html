@@ -580,12 +580,20 @@
             border: 2px solid var(--border);
             transition: all 0.3s ease;
             cursor: pointer;
+            display: block;
+            position: relative;
         }
 
         .demo-card:hover {
             transform: translateY(-6px) scale(1.02);
             box-shadow: 0 20px 40px rgba(196, 30, 58, 0.15);
             border-color: var(--cyclone-red);
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.03) 0%, rgba(196, 30, 58, 0.01) 100%);
+        }
+
+        .demo-grid a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .demo-number {
@@ -986,86 +994,107 @@
         <!-- DEMOS SECTION -->
         <section id="demos">
             <h2>Live Demonstrations</h2>
-            <p class="section-intro">See cutting-edge AI in action with live, hands-on demonstrations selected and customized for your audience and industry context.</p>
+            <p class="section-intro">See cutting-edge AI in action with live, hands-on demonstrations selected and customized for your audience and industry context. Click any demo to explore tools and examples.</p>
 
             <div class="demo-grid">
-                <div class="demo-card">
-                    <div class="demo-number">Demo 01</div>
-                    <div class="demo-title">Claude Code</div>
-                    <div class="demo-description">Vibe Coding & AI-Assisted Development</div>
-                </div>
+                <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 01</div>
+                        <div class="demo-title">Claude Code</div>
+                        <div class="demo-description">Vibe Coding & AI-Assisted Development</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">Try Claude Code →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 02</div>
-                    <div class="demo-title">Video Generation</div>
-                    <div class="demo-description">Text-to-video synthesis with Pika.art</div>
-                </div>
+                <a href="https://pika.art" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 02</div>
+                        <div class="demo-title">Video Generation</div>
+                        <div class="demo-description">Text-to-video synthesis with Pika.art</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">Explore Pika.art →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 03</div>
-                    <div class="demo-title">Agentic AI</div>
-                    <div class="demo-description">Workflow automation and intelligent orchestration</div>
-                </div>
+                <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 03</div>
+                        <div class="demo-title">Agentic AI</div>
+                        <div class="demo-description">Workflow automation and intelligent orchestration</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">Google AI Studio →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 04</div>
-                    <div class="demo-title">Preventive Maintenance</div>
-                    <div class="demo-description">Predictive analytics for equipment and assets</div>
-                </div>
+                <a href="https://roboflow.com/case-studies/predicting-equipment-maintenance-with-ai" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 04</div>
+                        <div class="demo-title">Preventive Maintenance</div>
+                        <div class="demo-description">Predictive analytics for equipment and assets</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">Roboflow Case Study →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 05</div>
-                    <div class="demo-title">Image Detection</div>
-                    <div class="demo-description">PPE compliance checking and safety monitoring</div>
-                </div>
+                <a href="https://github.com/ultralytics/ultralytics" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 05</div>
+                        <div class="demo-title">Image Detection</div>
+                        <div class="demo-description">PPE compliance checking and safety monitoring</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">Ultralytics →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 06</div>
-                    <div class="demo-title">Pose Estimation</div>
-                    <div class="demo-description">Human movement and activity recognition</div>
-                </div>
+                <a href="https://hpssjellis.github.io/tfjs-models-purejs-posenet/camera.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 06</div>
+                        <div class="demo-title">Pose Estimation</div>
+                        <div class="demo-description">Human movement and activity recognition</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">PoseNet Demo →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 07</div>
-                    <div class="demo-title">Digital Twin Creation</div>
-                    <div class="demo-description">NeRF and Gaussian Splatting technologies</div>
-                </div>
+                <a href="https://superspl.at/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 07</div>
+                        <div class="demo-title">Digital Twin Creation</div>
+                        <div class="demo-description">NeRF and Gaussian Splatting technologies</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">Splats Demo →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 08</div>
-                    <div class="demo-title">Driver Distraction Detection</div>
-                    <div class="demo-description">Real-time monitoring and safety analytics</div>
-                </div>
+                <a href="https://github.com/topics/driver-monitoring" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 08</div>
+                        <div class="demo-title">Driver Distraction Detection</div>
+                        <div class="demo-description">Real-time monitoring and safety analytics</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">Learn More →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 09</div>
-                    <div class="demo-title">Document Extraction</div>
-                    <div class="demo-description">Automated data capture and processing</div>
-                </div>
+                <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 09</div>
+                        <div class="demo-title">Document Extraction</div>
+                        <div class="demo-description">Automated data capture and processing</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">NotebookLM →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 10</div>
-                    <div class="demo-title">Knowledge Management</div>
-                    <div class="demo-description">Retrieval-Augmented Generation (RAG) systems</div>
-                </div>
+                <a href="https://deepmind.google/models/gemini-robotics/gemini-robotics-er/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 10</div>
+                        <div class="demo-title">Robotics Integration</div>
+                        <div class="demo-description">Vision-Language Actions for robotic control</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">Gemini Robotics →</div>
+                    </div>
+                </a>
 
-                <div class="demo-card">
-                    <div class="demo-number">Demo 11</div>
-                    <div class="demo-title">Robotics Integration</div>
-                    <div class="demo-description">Vision-Language Actions for robotic control</div>
-                </div>
-
-                <div class="demo-card">
-                    <div class="demo-number">Demo 12</div>
-                    <div class="demo-title">Multimodal AI</div>
-                    <div class="demo-description">Video analytics and multi-sensor processing</div>
-                </div>
-
-                <div class="demo-card">
-                    <div class="demo-number">Demo 13</div>
-                    <div class="demo-title">Segment Anything</div>
-                    <div class="demo-description">Advanced image segmentation and analysis</div>
-                </div>
+                <a href="https://aidemos.meta.com/segment-anything/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="demo-card">
+                        <div class="demo-number">Demo 11</div>
+                        <div class="demo-title">Segment Anything</div>
+                        <div class="demo-description">Advanced image segmentation and analysis</div>
+                        <div style="margin-top: 12px; font-size: 0.85rem; color: var(--cyclone-red); font-weight: 600;">SAM Demo →</div>
+                    </div>
+                </a>
             </div>
         </section>
 
@@ -1106,6 +1135,50 @@
                 </div>
             </div>
         </section>
+
+        <!-- PRESENTATION MATERIALS -->
+        <section id="materials">
+            <h2>Presentation Materials</h2>
+            <p class="section-intro">Review presentation slides directly in your browser or download for offline access.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>📘 Module 1: Introduction</h3>
+                    <p>Intro to AI and foundational concepts for the workshop.</p>
+                    <button class="pdf-viewer-btn" onclick="openPDFViewer('01_intro/slides.pdf', 'Module 1')" style="margin-top: 12px; padding: 8px 16px; background: var(--cyclone-red); color: white; border: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">View Slides →</button>
+                    <a href="01_intro/slides.pdf" download style="display: inline-block; margin-top: 8px; margin-left: 8px; padding: 6px 12px; background: transparent; color: var(--cyclone-red); border: 1px solid var(--cyclone-red); text-decoration: none; border-radius: 4px; font-size: 0.85rem;">Download</a>
+                </div>
+                <div class="card">
+                    <h3>📗 Module 2: AI Landscape</h3>
+                    <p>Comprehensive overview of AI technologies and emerging trends.</p>
+                    <button class="pdf-viewer-btn" onclick="openPDFViewer('02_ai_landscape/slides.pdf', 'Module 2')" style="margin-top: 12px; padding: 8px 16px; background: var(--cyclone-red); color: white; border: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">View Slides →</button>
+                    <a href="02_ai_landscape/slides.pdf" download style="display: inline-block; margin-top: 8px; margin-left: 8px; padding: 6px 12px; background: transparent; color: var(--cyclone-red); border: 1px solid var(--cyclone-red); text-decoration: none; border-radius: 4px; font-size: 0.85rem;">Download</a>
+                </div>
+                <div class="card">
+                    <h3>📕 Module 3: Risk Management</h3>
+                    <p>AI Risk Management framework and mitigation strategies.</p>
+                    <button class="pdf-viewer-btn" onclick="openPDFViewer('03_risk_management/slides.pdf', 'Module 3')" style="margin-top: 12px; padding: 8px 16px; background: var(--cyclone-red); color: white; border: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">View Slides →</button>
+                    <a href="03_risk_management/slides.pdf" download style="display: inline-block; margin-top: 8px; margin-left: 8px; padding: 6px 12px; background: transparent; color: var(--cyclone-red); border: 1px solid var(--cyclone-red); text-decoration: none; border-radius: 4px; font-size: 0.85rem;">Download</a>
+                </div>
+                <div class="card">
+                    <h3>📙 Module 4: Communication</h3>
+                    <p>Strategies for communicating AI initiatives to stakeholders.</p>
+                    <button class="pdf-viewer-btn" onclick="openPDFViewer('04_communication/slides.pdf', 'Module 4')" style="margin-top: 12px; padding: 8px 16px; background: var(--cyclone-red); color: white; border: none; border-radius: 6px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">View Slides →</button>
+                    <a href="04_communication/slides.pdf" download style="display: inline-block; margin-top: 8px; margin-left: 8px; padding: 6px 12px; background: transparent; color: var(--cyclone-red); border: 1px solid var(--cyclone-red); text-decoration: none; border-radius: 4px; font-size: 0.85rem;">Download</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDF VIEWER MODAL -->
+        <div id="pdfModal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); padding: 20px; overflow: auto;">
+            <div style="background-color: white; margin: 20px auto; padding: 0; border-radius: 12px; width: 90%; height: 90vh; display: flex; flex-direction: column; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 2px solid var(--border);">
+                    <h3 id="pdfTitle" style="margin: 0; color: var(--cyclone-red); font-family: 'Syne', sans-serif;">PDF Viewer</h3>
+                    <button onclick="closePDFViewer()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: var(--text-secondary);">✕</button>
+                </div>
+                <iframe id="pdfFrame" style="flex: 1; border: none; width: 100%;" src=""></iframe>
+            </div>
+        </div>
 
         <!-- INDUSTRIES -->
         <section>
@@ -1217,6 +1290,39 @@
             btn.addEventListener('click', function() {
                 alert('Contact TrAC at baditya@iastate.edu to schedule your workshop!');
             });
+        });
+
+        // PDF Viewer functions
+        function openPDFViewer(pdfPath, title) {
+            const modal = document.getElementById('pdfModal');
+            const frame = document.getElementById('pdfFrame');
+            const titleEl = document.getElementById('pdfTitle');
+
+            titleEl.textContent = title;
+            frame.src = pdfPath;
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePDFViewer() {
+            const modal = document.getElementById('pdfModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the content
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('pdfModal');
+            if (event.target === modal) {
+                closePDFViewer();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closePDFViewer();
+            }
         });
     </script>
 </body>
